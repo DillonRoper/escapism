@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://sk6yrptrcx33"]
+
+[ext_resource type="Script" uid="uid://mc435bkxt0hp" path="res://MainMenu/main_menu.gd" id="1_b76km"]
+[ext_resource type="Script" uid="uid://ctycrtexsllky" path="res://MainMenu/new_game.gd" id="2_lbqne"]
+[ext_resource type="Script" uid="uid://b6pf3qrj2eqnp" path="res://MainMenu/continue_game.gd" id="3_430ii"]
+[ext_resource type="PackedScene" uid="uid://bugrbs5xpbafl" path="res://cube.glb" id="4_lbqne"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7vrkn"]
+font_size = 44
+
+[node name="Control" type="Control" unique_id=1559472241]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b76km")
+
+[node name="Label" type="Label" parent="." unique_id=2017069605]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -116.5
+offset_right = 116.5
+offset_bottom = 125.0
+grow_horizontal = 2
+text = "Escapism
+0.0.0"
+label_settings = SubResource("LabelSettings_7vrkn")
+horizontal_alignment = 1
+
+[node name="NewGame" type="Button" parent="." unique_id=2128177339]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -47.0
+offset_right = 70.9541
+offset_bottom = 21.769653
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Start a new save file of Escapism!"
+text = "New"
+script = ExtResource("2_lbqne")
+
+[node name="LoadGame" type="Button" parent="." unique_id=2140937490]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = 49.0
+offset_right = 70.9541
+offset_bottom = 117.76965
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Start a new save file of Escapism!"
+text = "Load"
+script = ExtResource("2_lbqne")
+
+[node name="MainSettings" type="Button" parent="." unique_id=1123061476]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = 145.0
+offset_right = 70.9541
+offset_bottom = 213.76965
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Start a new save file of Escapism!"
+text = "Settings"
+script = ExtResource("2_lbqne")
+
+[node name="ContinueGame" type="Button" parent="." unique_id=928516066]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -143.0
+offset_right = 70.9541
+offset_bottom = -74.23035
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Start a new save file of Escapism!"
+text = "Continue"
+script = ExtResource("3_430ii")
+
+[node name="cube" parent="." unique_id=1846610210 instance=ExtResource("4_lbqne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6292614, 0, -1.9073145)
